@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funnels OK Mobility</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path
+          d="M4 7.5A1.5 1.5 0 0 1 5.5 6h13A1.5 1.5 0 0 1 20 7.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 16.5v-9Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <path
+          d="m5.2 7.4 6 5.2a1.2 1.2 0 0 0 1.6 0l6-5.2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path
+          d="M12 21s6-5.7 6-11a6 6 0 1 0-12 0c0 5.3 6 11 6 11Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path
+          d="M3 6.5A1.5 1.5 0 0 1 4.5 5h9A1.5 1.5 0 0 1 15 6.5V14h1.8a1 1 0 0 0 .8-.4l1.8-2.4a1 1 0 0 0 .2-.6V9.5A1.5 1.5 0 0 0 18.1 8H15"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M5 17.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM3.5 19H15"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-building" viewBox="0 0 24 24">
+        <path
+          d="M9 7H6.5A2.5 2.5 0 0 0 4 9.5v8A2.5 2.5 0 0 0 6.5 20h8a2.5 2.5 0 0 0 2.5-2.5V15"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M12.5 4H20v7.5M19.5 4.5l-8 8"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path
+          d="M5 12h14m-5-5 5 5-5 5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-tag" viewBox="0 0 24 24">
+        <path
+          d="m11 4.5 8 8-6.5 6.5-8-8V4.5H11Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <circle cx="8.3" cy="8.3" r="1.2" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path
+          d="m12 3.8 2.3 4.7 5.2.8-3.8 3.7.9 5.2-4.6-2.4-4.6 2.4.9-5.2-3.8-3.7 5.2-.8L12 3.8Z"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol id="icon-caret" viewBox="0 0 24 24">
+        <path
+          d="m7 14 5-5 5 5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-connector" viewBox="0 0 24 24">
+        <path
+          d="M6 12h12"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
+        <path
+          d="m13.5 9 3 3-3 3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path
+          d="M6 6 18 18M18 6 6 18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-search-file" viewBox="0 0 24 24">
+        <path
+          d="M14 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7l-4-4Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M14 3v4h4M10.5 12.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm5 5 2 2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path
+          d="M12 3.5 18 6v5.5c0 4.3-2.5 7.4-6 9-3.5-1.6-6-4.7-6-9V6l6-2.5Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-card-off" viewBox="0 0 24 24">
+        <path
+          d="M4 8.5A2.5 2.5 0 0 1 6.5 6h11A2.5 2.5 0 0 1 20 8.5v7A2.5 2.5 0 0 1 17.5 18h-11A2.5 2.5 0 0 1 4 15.5v-7Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 10.5h16M9 15.5h2.5M15.5 6l-7 12"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-clock-check" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path
+          d="M12 8v4l2.8 1.7m1.2 2 1.4 1.4 3-3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-fuel" viewBox="0 0 24 24">
+        <path
+          d="M6 6.5A1.5 1.5 0 0 1 7.5 5h5A1.5 1.5 0 0 1 14 6.5v12A1.5 1.5 0 0 1 12.5 20h-5A1.5 1.5 0 0 1 6 18.5v-12Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M14 8h1.5A1.5 1.5 0 0 1 17 9.5V16a2 2 0 0 0 4 0v-4.5l-2-2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path d="M8.8 9h2.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-road" viewBox="0 0 24 24">
+        <path
+          d="M9.5 20 11 4m2 0 1.5 16M6 20h12"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path d="M12 7.5v2m0 4v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-bus" viewBox="0 0 24 24">
+        <path
+          d="M7 4.5h10A2.5 2.5 0 0 1 19.5 7v8A2.5 2.5 0 0 1 17 17.5H7A2.5 2.5 0 0 1 4.5 15V7A2.5 2.5 0 0 1 7 4.5Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4.5 9.5h15M8 17.5v2M16 17.5v2M8.5 13.5h.01M15.5 13.5h.01"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-info-circle" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path
+          d="M12 10.5v5M12 7.8h.01"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-list-lines" viewBox="0 0 24 24">
+        <path
+          d="M9 7h10M9 12h10M9 17h10M5 7h.01M5 12h.01M5 17h.01"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
+      </symbol>
+    </svg>
+
+    <main class="page">
+      <div class="columns-shell">
+        <section class="columns" aria-label="Maqueta de funnels OK Mobility" data-device-view="desktop">
+          <article class="summary-column" data-column-variant="standard" data-mobile-hidden="true">
+          <span class="summary-label">ESTANDAR [R+D]</span>
+
+          <div class="summary-stack">
+            <section class="card summary-card">
+              <header class="vehicle-head">
+                <div>
+                  <h2 class="vehicle-title">BMW Serie 1 M</h2>
+                  <p class="vehicle-subtitle">o similar · Compacto CMAR</p>
+                </div>
+              </header>
+
+              <div class="vehicle-media">
+                <img
+                  class="vehicle-image"
+                  src="https://www.figma.com/api/mcp/asset/3537ca05-278a-4d01-bf0a-defdb8648fe9"
+                  alt="BMW Serie 1 M"
+                />
+              </div>
+
+              <div class="card-row">
+                <h3 class="card-title">RESUMEN RESERVA</h3>
+                <button class="link-action" type="button">Modificar</button>
+              </div>
+
+              <div class="detail-list">
+                <div class="detail-group">
+                  <div class="detail-label">
+                    <img class="icon-asset icon-asset--pin" src="./ASSETS/ico-pin.svg" alt="" />
+                    <span>Recogida y devolución</span>
+                  </div>
+                  <p class="detail-copy">Mallorca Aeropuerto (PMI)</p>
+                  <div class="detail-flow detail-flow--single-line">
+                    <span>06/01/2026 - 12:00</span>
+                    <svg class="icon icon--xs"><use href="#icon-connector"></use></svg>
+                    <span>20/01/2026 - 12:00</span>
+                  </div>
+                </div>
+
+                <div class="card-row card-row--compact">
+                  <span class="detail-strong">¿Qué incluye mi reserva?</span>
+                  <button
+                    class="link-action"
+                    type="button"
+                    data-reservation-modal-open
+                  >
+                    Detalles
+                  </button>
+                </div>
+              </div>
+
+              <button class="secondary-cta" type="button">
+                <img class="icon-asset icon-asset--mail" src="./ASSETS/ico-mail.svg" alt="" />
+                <span>Enviar presupuesto</span>
+              </button>
+            </section>
+
+            <section class="card price-card">
+              <div class="card-row">
+                <h3 class="card-title">RESUMEN DE PRECIOS</h3>
+                <button
+                  class="link-action"
+                  type="button"
+                  data-reservation-modal-open
+                  data-reservation-modal-section="pricing"
+                >
+                  Desglose
+                </button>
+              </div>
+
+              <div class="price-block">
+                <div class="price-row">
+                  <div class="price-inline">
+                    <span class="detail-strong">Tarifa</span>
+                    <span class="detail-muted detail-muted--small">(00 días)</span>
+                  </div>
+                  <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                </div>
+              </div>
+
+              <div class="total-block">
+                <div class="total-row">
+                  <span class="total-label">TOTAL</span>
+                  <span class="total-value" data-price-amount="000,00">000,00€</span>
+                </div>
+                <span class="detail-muted" data-price-daily="000">000€ / día</span>
+              </div>
+            </section>
+
+            <section class="card promo-card">
+              <h3 class="promo-title">¿Tienes un código promocional?</h3>
+              <div class="promo-row">
+                <label class="promo-field">
+                  <span class="sr-only">Introduce un promocode</span>
+                  <input type="text" placeholder="Introduce un promocode" />
+                </label>
+                <button class="promo-button" type="button" aria-label="Aplicar código">
+                  <img src="./ASSETS/ico-arrow-right.SVG" alt="" />
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <footer class="column-footer">
+            <button class="primary-cta" type="button">CONTINUAR</button>
+            <p class="club-copyline">
+              <span>Tu reserva equivale a</span>
+                <img src="./assets/ico-points.svg" alt="promocode" aria-hidden="true" />
+              <strong>000 puntos Club OK</strong>
+            </p>
+            <span
+              class="google-rating"
+              role="img"
+              aria-label="Valoración de Google"
+            ></span>
+          </footer>
+        </article>
+
+        <article class="summary-column" data-column-variant="extras" data-mobile-hidden="true">
+          <span class="summary-label">EXTRAS [RyD]</span>
+
+          <div class="summary-stack">
+            <section class="card summary-card">
+              <header class="vehicle-head">
+                <div>
+                  <h2 class="vehicle-title">BMW Serie 1 M</h2>
+                  <p class="vehicle-subtitle">o similar · Compacto CMAR</p>
+                </div>
+              </header>
+
+              <div class="vehicle-media">
+                <img
+                  class="vehicle-image"
+                  src="https://www.figma.com/api/mcp/asset/3537ca05-278a-4d01-bf0a-defdb8648fe9"
+                  alt="BMW Serie 1 M"
+                />
+              </div>
+
+              <div class="card-row">
+                <h3 class="card-title">RESUMEN RESERVA</h3>
+                <button class="link-action" type="button">Modificar</button>
+              </div>
+
+              <div class="detail-list">
+                <div class="detail-group">
+                  <div class="detail-label">
+                    <img class="icon-asset icon-asset--pin" src="./ASSETS/ico-pin.svg" alt="" />
+                    <span>Recogida</span>
+                  </div>
+                  <p class="detail-copy">Mallorca Aeropuerto (PMI)</p>
+                  <p class="detail-muted">06/12/2026 - 12:00h</p>
+                </div>
+
+                <div class="detail-group">
+                  <div class="detail-label">
+                    <img class="icon-asset icon-asset--pin" src="./ASSETS/ico-pin.svg" alt="" />
+                    <span>Devolución</span>
+                  </div>
+                  <p class="detail-copy">Mallorca Aeropuerto (PMI)</p>
+                  <p class="detail-muted">11/12/2026 - 12:00h</p>
+                </div>
+
+                <div class="card-row card-row--compact">
+                  <span class="detail-strong">¿Qué incluye mi reserva?</span>
+                  <button
+                    class="link-action"
+                    type="button"
+                    data-reservation-modal-open
+                  >
+                    Detalles
+                  </button>
+                </div>
+              </div>
+
+              <button class="secondary-cta" type="button">
+                <img class="icon-asset icon-asset--mail" src="./ASSETS/ico-mail.svg" alt="" />
+                <span>Enviar presupuesto</span>
+              </button>
+            </section>
+
+            <section class="card price-card">
+              <div class="card-row">
+                <h3 class="card-title">RESUMEN DE PRECIOS</h3>
+                <button
+                  class="link-action"
+                  type="button"
+                  data-reservation-modal-open
+                  data-reservation-modal-section="pricing"
+                >
+                  Desglose
+                </button>
+              </div>
+
+              <div class="price-block">
+                <div class="price-row">
+                  <div class="price-inline">
+                    <span class="detail-strong">Tarifa</span>
+                    <span class="detail-muted detail-muted--small">(00 días)</span>
+                  </div>
+                  <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                </div>
+
+                <div class="price-section">
+                  <div class="price-section-head">
+                    <button class="toggle-section-trigger" type="button" aria-expanded="true">
+                      <span class="price-inline">
+                        <span class="detail-strong">Extras</span>
+                        <span class="collapse-count">(4 unidades)</span>
+                        <svg class="icon icon--xs"><use href="#icon-caret"></use></svg>
+                      </span>
+                    </button>
+                    <span class="price-section-summary" data-price-amount="000,00">000,00€</span>
+                  </div>
+
+
+
+                  <ul class="price-list">
+                    <li>
+                      <span class="bullet-copy">Premium Cover</span>
+                      <span class="detail-copy">Incluido</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Conductor adicional</span>
+                      <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Conductor joven</span>
+                      <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Pack mascotas</span>
+                      <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="price-section">
+                  <div class="price-section-head">
+                    <button class="toggle-section-trigger" type="button" aria-expanded="true">
+                      <span class="price-inline">
+                        <span class="detail-strong">Club OK</span>
+                        <span class="collapse-count">(4 unidades)</span>
+                        <svg class="icon icon--xs"><use href="#icon-caret"></use></svg>
+                      </span>
+                    </button>
+                    <span class="price-section-summary">Canjeado</span>
+                  </div>
+
+                  <ul class="price-list">
+                    <li>
+                      <span class="bullet-copy">Conductor adicional</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">GPS</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Cadenas de nieve</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Asistencia en carretera</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="total-block">
+                <div class="total-row">
+                  <span class="total-label">TOTAL</span>
+                  <span class="total-value" data-price-amount="000,00">000,00€</span>
+                </div>
+                <span class="detail-muted" data-price-daily="000">000€ / día</span>
+              </div>
+            </section>
+
+            <section class="card promo-card">
+              <h3 class="promo-title">¿Tienes un código promocional?</h3>
+              <div class="promo-row">
+                <label class="promo-field">
+                  <span class="sr-only">Introduce un promocode</span>
+                  <input type="text" placeholder="Introduce un promocode" />
+                </label>
+                <button class="promo-button" type="button" aria-label="Aplicar código">
+                  <img src="./ASSETS/ico-arrow-right.SVG" alt="" />
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <footer class="column-footer">
+            <button class="primary-cta" type="button">CONTINUAR</button>
+            <p class="club-copyline">
+              <span>Tu reserva equivale a</span>
+              <img src="./assets/ico-points.svg" alt="promocode" aria-hidden="true" />
+              <strong>000 puntos Club OK</strong>
+            </p>
+            <span
+              class="google-rating"
+              role="img"
+              aria-label="Valoración de Google"
+            ></span>
+          </footer>
+        </article>
+
+        <article class="summary-column" data-column-variant="delivery-club" data-mobile-hidden="true">
+          <span class="summary-label">EXTRAS [DEL] + CLUB OK</span>
+
+          <div class="summary-stack">
+            <section class="card summary-card">
+              <header class="vehicle-head vehicle-head--split">
+                <div>
+                  <h2 class="vehicle-title">BMW Serie 1 M</h2>
+                  <p class="vehicle-subtitle">o similar · Compacto CMAR</p>
+                </div>
+                <span class="variant-pill">
+                  <img class="variant-pill__icon" src="./assets/ico-delivery.svg" alt="" aria-hidden="true" />
+                  <span>DELIVERY</span>
+                </span>
+              </header>
+
+              <div class="vehicle-media">
+                <img
+                  class="vehicle-image"
+                  src="https://www.figma.com/api/mcp/asset/3537ca05-278a-4d01-bf0a-defdb8648fe9"
+                  alt="BMW Serie 1 M"
+                />
+              </div>
+
+              <div class="card-row">
+                <h3 class="card-title">RESUMEN RESERVA</h3>
+                <button class="link-action" type="button">Modificar</button>
+              </div>
+
+              <div class="detail-list">
+                <div class="detail-group">
+                  <div class="detail-label">
+                    <img class="icon-asset icon-asset--arrow" src="./ASSETS/ico-arrow.svg" alt="" />
+                    <span>Detalles entrega</span>
+                  </div>
+                  <p class="detail-copy">Carrer de Balmes, Barcelona, España</p>
+                  <p class="detail-muted">06/01/2026 - 12:00</p>
+                </div>
+
+                <div class="detail-group">
+                  <div class="detail-label">
+                    <img class="icon-asset icon-asset--building" src="./ASSETS/ico-building.svg" alt="" />
+                    <span>Detalles devolución</span>
+                  </div>
+                  <p class="detail-copy">Mallorca Aeropuerto (PMI)</p>
+                  <p class="detail-muted">11/12/2026 - 12:00h</p>
+                </div>
+
+                <div class="card-row card-row--compact">
+                  <span class="detail-strong">¿Qué incluye mi reserva?</span>
+                  <button
+                    class="link-action"
+                    type="button"
+                    data-reservation-modal-open
+                  >
+                    Detalles
+                  </button>
+                </div>
+              </div>
+
+              <button class="secondary-cta" type="button">
+                <img class="icon-asset icon-asset--mail" src="./ASSETS/ico-mail.svg" alt="" />
+                <span>Enviar presupuesto</span>
+              </button>
+            </section>
+
+            <section class="card price-card price-card--delivery">
+              <div class="card-row">
+                <h3 class="card-title">RESUMEN DE PRECIOS</h3>
+                <button
+                  class="link-action"
+                  type="button"
+                  data-reservation-modal-open
+                  data-reservation-modal-section="pricing"
+                >
+                  Desglose
+                </button>
+              </div>
+
+              <div class="price-block">
+                <div class="price-row">
+                  <span class="detail-strong">Tarifa</span>
+                  <div class="price-inline">
+                    <span class="promo-chip promo-chip--quiet">
+                      <img class="variant-pill__icon" src="./assets/ico-promo.svg" alt="promocode" aria-hidden="true" />
+                      PROMOCODE.1
+                    </span>
+                  </div>
+                </div>
+
+                <div class="price-row price-row--nested" data-extras-days-row>
+                  <span class="bullet-copy">4 días</span>
+                  <div class="price-inline">
+                    <span class="sale-chip">-15%</span>
+                    <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                  </div>
+                </div>
+
+                <div class="price-section">
+                  <div class="price-section-head">
+                    <button class="toggle-section-trigger" type="button" aria-expanded="true">
+                      <span class="price-inline">
+                        <span class="detail-strong">Extras</span>
+                        
+                        <svg class="icon icon--xs"><use href="#icon-caret"></use></svg>
+                      </span>
+                      
+                    </button>
+                     <div class="price-inline">
+                    <span class="promo-chip promo-chip--quiet">
+                      <img class="variant-pill__icon" src="./assets/ico-promo.svg" alt="promocode" aria-hidden="true" />
+                      PROMOCODE.2
+                    </span>
+                  </div>
+                   
+                    
+                  </div>
+                  <div class="price-section-collapsed-row">
+                    <span class="bullet-copy">4 unidades</span>
+                  </div>
+
+                  <ul class="price-list">
+                    <li>
+                      <span class="bullet-copy">Premium Cover</span>
+                      <span class="detail-copy">Incluido</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Conductor adicional</span>
+                      <span class="price-inline">
+                        <span class="sale-chip">-15%</span>
+                        <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Conductor joven</span>
+                      <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Pack mascotas</span>
+                      <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                    </li>
+                  </ul>
+                  <div class="price-row price-row--nested, collapse-count">
+                  <span class="bullet-copy">4 unidades</span>
+                  <div class="price-inline">
+                    <span class="sale-chip">-15%</span>
+                    <span class="detail-copy" data-price-amount="000,00">000,00€</span>
+                  </div>
+                </div>
+                </div>
+              
+                <div class="price-section">
+                  <div class="price-section-head">
+                    <button class="toggle-section-trigger" type="button" aria-expanded="true">
+                      <span class="price-inline">
+                        <span class="detail-strong">Club OK</span>
+                        <span class="collapse-count">(4 unidades)</span>
+                        <svg class="icon icon--xs"><use href="#icon-caret"></use></svg>
+                      </span>
+                    </button>
+                    <span class="price-section-summary">Canjeado</span>
+                  </div>
+
+                  <ul class="price-list">
+                    <li>
+                      <span class="bullet-copy">Conductor adicional</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">GPS</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Cadenas de nieve</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                    <li>
+                      <span class="bullet-copy">Asistencia en carretera</span>
+                      <span class="detail-copy">Canjeado</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="total-block">
+                <div class="total-row">
+                  <span class="total-label">TOTAL</span>
+                  <span class="total-value" data-price-amount="000,00">000,00€</span>
+                </div>
+                <span class="detail-muted" data-price-daily="000">000€ / día</span>
+              </div>
+            </section>
+
+            <section class="card promo-card">
+              <h3 class="promo-title">¿Tienes un código promocional?</h3>
+              <div class="promo-row">
+                <label class="promo-field">
+                  <span class="sr-only">Introduce un promocode</span>
+                  <input type="text" placeholder="Introduce un promocode" />
+                </label>
+                <button class="promo-button" type="button" aria-label="Aplicar código">
+                  <img src="./ASSETS/ico-arrow-right.SVG" alt="" />
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <footer class="column-footer">
+            <button class="primary-cta" type="button">CONTINUAR</button>
+            <p class="club-copyline">
+              <span>Tu reserva equivale a</span>
+              <img src="./assets/ico-points.svg" alt="promocode" aria-hidden="true" />
+              <strong>000 puntos Club OK</strong>
+            </p>
+            <span
+              class="google-rating"
+              role="img"
+              aria-label="Valoración de Google: 4,7 de 5 estrellas"
+            ></span>
+          </footer>
+        </article>
+        </section>
+
+        <section
+          class="mobile-preview-shell"
+          aria-label="Maqueta m&oacute;vil de funnels OK Mobility"
+          data-device-view="mobile"
+          hidden
+        >
+          <div class="mobile-preview">
+            <div class="mobile-preview__statusbar">
+              <span class="mobile-preview__status-pill" aria-hidden="true"></span>
+            </div>
+
+            <div class="mobile-preview__topbar">
+              <div class="mobile-preview__brand">
+                <img src="./assets/log-ok.png" alt="" aria-hidden="true" />
+                <span class="mobile-preview__brand-copy">Alquiler</span>
+              </div>
+
+              <div class="mobile-preview__top-actions">
+                <span class="mobile-preview__user" aria-hidden="true">
+                  <svg class="mobile-preview__user-icon"><use href="#icon-user"></use></svg>
+                </span>
+                <span class="mobile-preview__locale">
+                  <span data-mobile-currency-flag></span>
+                  <span>ES/<span data-mobile-currency-id>EUR</span></span>
+                </span>
+              </div>
+            </div>
+
+            <div class="mobile-preview__date-card">
+              <button class="mobile-preview__blank" type="button">
+              </button>
+              <div class="mobile-preview__date-copy">
+                <strong>Mallorca Aeropuerto (PMI)</strong>
+                <span>
+                  06/01/2026 - 12:00
+                  <img src="./assets/ico-arrow-right-grey.svg" alt="" aria-hidden="true" />
+                  20/01/2026 - 12:00
+                </span>
+              </div>
+
+              <button class="mobile-preview__edit" type="button" aria-label="Modificar reserva">
+                <img src="./assets/ico-edit.svg" alt="" aria-hidden="true" />
+              </button>
+            </div>
+
+            <div class="mobile-preview__content">
+              <section class="mobile-card mobile-card--vehicle">
+                <div class="mobile-card__vehicle-head">
+                  <img
+                    class="mobile-card__vehicle-image"
+                    src="./assets/img-car.png"
+                    alt="BMW Serie 1 M"
+                  />
+                    
+                  <div class="mobile-card__vehicle-copy">
+                    <span class="mobile-card__delivery-pill">
+                      <img src="./assets/ico-delivery.svg" alt="" aria-hidden="true" />
+                      DELIVERY
+                    </span>
+                    <strong>BMW Serie 1 M</strong>
+                    <span>o similar · Compacto CMAR</span>
+                  </div>
+                </div>
+
+                <div class="mobile-card__divider"></div>
+
+                <div class="mobile-card__link-row">
+                  <span>&iquest;Qu&eacute; incluye mi reserva?</span>
+                  <button
+                    class="link-action"
+                    type="button"
+                    data-reservation-modal-open
+                    data-reservation-modal-mode="mobile"
+                  >
+                    Detalles
+                  </button>
+                </div>
+              </section>
+
+              <section class="mobile-card mobile-card--coverage">
+                <div class="mobile-card__coverage-title">
+                  <img src="./assets/ico-shield.svg" alt="" aria-hidden="true" />
+                  <h2>&iquest;Qu&eacute; cobertura se ajusta a tus necesidades?</h2>
+                </div>
+
+                <div class="mobile-card__coverage-placeholder"></div>
+                <div class="mobile-card__coverage-placeholder"></div>
+                <div class="mobile-card__coverage-placeholder"></div>
+              </section>
+            </div>
+
+            <div class="mobile-preview__footer">
+              <button
+                class="mobile-preview__promo-banner"
+                type="button"
+                data-promo-open-modal
+                data-promo-modal-mode="mobile"
+              >
+                <svg class="reservation-breakdown__promo-icon" viewBox="0 0 20 20" aria-hidden="true">
+                      <path
+                        d="M6.66651 6.66699H6.67484M1.6665 4.33366L1.6665 8.06242C1.6665 8.47007 1.6665 8.6739 1.71255 8.86571C1.75338 9.03577 1.82072 9.19835 1.9121 9.34747C2.01517 9.51566 2.1593 9.65979 2.44755 9.94804L8.83808 16.3386C9.82812 17.3286 10.3231 17.8236 10.894 18.0091C11.3961 18.1722 11.9369 18.1722 12.439 18.0091C13.0099 17.8236 13.5049 17.3286 14.4949 16.3386L16.3381 14.4954C17.3281 13.5054 17.8231 13.0104 18.0086 12.4395C18.1718 11.9374 18.1718 11.3966 18.0086 10.8944C17.8231 10.3236 17.3281 9.82861 16.3381 8.83856L9.94755 2.44804C9.6593 2.15979 9.51517 2.01566 9.34698 1.91259C9.19786 1.82121 9.03528 1.75387 8.86522 1.71304C8.67341 1.66699 8.46958 1.66699 8.06193 1.66699L4.33317 1.66699C3.39975 1.66699 2.93304 1.66699 2.57652 1.84865C2.26292 2.00844 2.00795 2.2634 1.84816 2.57701C1.6665 2.93353 1.6665 3.40024 1.6665 4.33366ZM7.08317 6.66699C7.08317 6.89711 6.89662 7.08366 6.66651 7.08366C6.43639 7.08366 6.24984 6.89711 6.24984 6.66699C6.24984 6.43687 6.43639 6.25033 6.66651 6.25033C6.89662 6.25033 7.08317 6.43687 7.08317 6.66699Z"
+                        fill="none"
+                        stroke="#1833B7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                <span>&iquest;Tienes un <strong>C&oacute;digo Promocional</strong>?</span>
+              </button>
+
+              <div class="mobile-preview__footer-main">
+                <button
+                  class="mobile-preview__price-link"
+                  type="button"
+                  data-reservation-modal-open
+                  data-reservation-modal-mode="mobile"
+                  data-reservation-modal-section="pricing"
+                >
+                  <strong data-price-amount="000,00">000,00&euro;</strong>
+                  <span>Detalle de precios</span>
+                </button>
+
+                <button class="mobile-preview__continue" type="button" data-mobile-continue>
+                  <span>Continuar</span>
+                  <img src="./assets/ico-double-arrow.svg" alt="" aria-hidden="true" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="currency-panel" aria-labelledby="currency-selector-title">
+          <span class="currency-panel__eyebrow" id="currency-selector-title">MONEDA</span>
+
+          <div class="currency-switcher" data-currency-switcher>
+            <button
+              class="currency-switcher__trigger"
+              type="button"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              data-currency-trigger
+            >
+              <span class="currency-switcher__selected">
+                <span data-selected-currency-flag></span>
+                <span class="currency-switcher__copy">
+                  <span class="currency-switcher__value" data-selected-currency-code>&#8364;</span>
+                  <span class="currency-switcher__name" data-selected-currency-name>Euro</span>
+                </span>
+              </span>
+              <svg class="icon icon--sm currency-switcher__caret"><use href="#icon-caret"></use></svg>
+            </button>
+
+            <div class="currency-switcher__menu" hidden data-currency-menu>
+              <div
+                class="currency-switcher__options"
+                role="listbox"
+                aria-label="Seleccionar moneda"
+                data-currency-options
+              ></div>
+            </div>
+          </div>
+
+          <div class="device-panel" aria-labelledby="device-selector-title">
+            <span class="currency-panel__eyebrow" id="device-selector-title">DISPOSITIVO</span>
+
+            <div class="device-switcher" role="group" aria-label="Seleccionar dispositivo">
+              <button
+                class="device-switcher__option is-active"
+                type="button"
+                aria-pressed="true"
+                data-device-option="desktop"
+              >
+                Desktop
+              </button>
+              <button
+                class="device-switcher__option"
+                type="button"
+                aria-pressed="false"
+                data-device-option="mobile"
+              >
+                Mobile
+              </button>
+            </div>
+          </div>
+
+          <div class="resolution-panel" aria-labelledby="resolution-selector-title" data-resolution-panel hidden>
+            <div class="resolution-panel__header">
+              <span class="currency-panel__eyebrow" id="resolution-selector-title">RESOLUCI&Oacute;N</span>
+              <strong class="resolution-panel__value" data-resolution-value>390px</strong>
+            </div>
+
+            <div class="resolution-panel__control">
+              <input
+                class="resolution-panel__slider"
+                type="range"
+                min="350"
+                max="575"
+                step="1"
+                value="390"
+                aria-label="Ajustar resoluci&oacute;n m&oacute;vil"
+                data-resolution-input
+              />
+
+              <div class="resolution-panel__limits" aria-hidden="true">
+                <span>350px</span>
+                <span>575px</span>
+              </div>
+            </div>
+
+            <button class="resolution-panel__reset" type="button" data-resolution-reset>
+              Borrar parametros
+            </button>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <div class="promo-conditions-modal" data-promo-conditions-modal hidden>
+      <div class="promo-conditions-modal__backdrop" data-promo-conditions-close></div>
+
+      <section
+        class="promo-conditions-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="promo-conditions-title"
+      >
+        <div class="promo-conditions-modal__content">
+          <header class="promo-conditions-modal__header">
+            <h2 class="promo-conditions-modal__title" id="promo-conditions-title">
+              CONDICIONES DE LA PROMOCIÓN
+            </h2>
+            <button
+              class="promo-conditions-modal__close"
+              type="button"
+              aria-label="Cerrar"
+              data-promo-conditions-close
+            >
+              <img src="./assets/ico-closed.svg" alt="" aria-hidden="true" />
+            </button>
+          </header>
+
+          <div class="promo-conditions-modal__tabs">
+            <span class="promo-conditions-modal__tab promo-conditions-modal__tab--active">PROMOCODE.1</span>
+            <span class="promo-conditions-modal__tab">PROMOCODE.2</span>
+          </div>
+
+          <div class="promo-conditions-modal__copy">
+            <p><strong>Periodo de promoción: 06/10/2026</strong> hasta el <strong>10/10/2026</strong>.</p>
+            <p>Oferta válida para recogidas entre <strong>06/10/2026</strong> hasta el <strong>31/12/2026</strong>.</p>
+            <p>Exclusiva para reservas realizadas en <strong>OK Mobility web</strong> con todos los métodos de pago.</p>
+            <p>La empresa se reserva el derecho a modificar o cancelar esta promoción sin previo aviso.</p>
+            <p>Stores y vehículos donde no aplica la promoción:</p>
+          </div>
+
+          <div class="promo-conditions-modal__section">
+            <div class="promo-conditions-modal__section-head">
+              <div class="promo-conditions-modal__section-label">
+                <span class="promo-conditions-modal__count">3</span>
+                <strong>ESPAÑA</strong>
+              </div>
+              <svg class="promo-conditions-modal__caret"><use href="#icon-caret"></use></svg>
+            </div>
+            <div class="promo-conditions-modal__table">
+              <div class="promo-conditions-modal__row">
+                <strong>Tenerife</strong>
+                <span>OK Tenerife Sur Aeropuerto</span>
+              </div>
+              <div class="promo-conditions-modal__row">
+                <strong>Gran Canaria</strong>
+                <span>OK Gran Canaria Aeropuerto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-conditions-modal__section">
+            <div class="promo-conditions-modal__section-head">
+              <div class="promo-conditions-modal__section-label">
+                <span class="promo-conditions-modal__count promo-conditions-modal__count--wide">18</span>
+                <strong>VEHÍCULOS</strong>
+              </div>
+              <svg class="promo-conditions-modal__caret"><use href="#icon-caret"></use></svg>
+            </div>
+            <div class="promo-conditions-modal__table">
+              <div class="promo-conditions-modal__row">
+                <strong>Coches</strong>
+                <span>CMAB, XLAX, XXXX, XXEP</span>
+              </div>
+              <div class="promo-conditions-modal__row">
+                <strong>Furgonetas</strong>
+                <span>XXXX, B2AB, PPPS</span>
+              </div>
+              <div class="promo-conditions-modal__row promo-conditions-modal__row--last">
+                <strong>Motos</strong>
+                <span>XXXX, B2AB, PPPS</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="promo-conditions-modal__accept" type="button" data-promo-conditions-close>
+            Aceptar
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <div class="promo-modal" data-promo-modal hidden>
+      <div class="promo-modal__backdrop" data-promo-modal-close></div>
+
+      <section
+        class="promo-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="promo-modal-title"
+      >
+        <div data-promo-modal-content></div>
+      </section>
+    </div>
+
+    <div class="reservation-modal" data-reservation-modal hidden>
+      <div class="reservation-modal__backdrop" data-reservation-modal-close></div>
+
+      <section
+        class="reservation-modal__dialog"
+        data-reservation-modal-dialog
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="reservation-modal-title"
+      >
+        <header class="reservation-modal__header">
+          <h2 class="reservation-modal__title" id="reservation-modal-title">RESUMEN RESERVA</h2>
+          <button
+            class="reservation-modal__close"
+            type="button"
+            aria-label="Cerrar modal"
+            data-reservation-modal-close
+          >
+            <img class="reservation-modal__close-icon" src="./assets/ico-closed.svg" alt="" aria-hidden="true" />
+          </button>
+        </header>
+
+        <div class="reservation-modal__content">
+          <button
+            class="reservation-modal__panel reservation-modal__panel-trigger is-active"
+            type="button"
+            aria-expanded="true"
+            aria-controls="reservation-modal-section-main"
+            data-reservation-section-trigger="reservation"
+          >
+            <span class="reservation-modal__panel-copy">
+              <img
+                class="reservation-modal__panel-icon"
+                src="./assets/ico-booking.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>¿Qué incluye mi reserva?</span>
+            </span>
+            <img class="reservation-modal__panel-caret" src="./assets/ico-arrow-blue.svg" alt="" aria-hidden="true" />
+          </button>
+
+          <div
+            class="reservation-modal__section"
+            id="reservation-modal-section-main"
+            data-reservation-section-content="reservation"
+          >
+            <div class="reservation-accordion">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="true"
+                aria-controls="reservation-accordion-cover"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy">
+                  <svg class="reservation-accordion__icon"><use href="#icon-shield"></use></svg>
+                  <span>Cobertura básica: Franquicia XXX€</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-cover">
+                <p>
+                  Importe para proteger daños del vehículo en caso de accidente. Selecciona
+                  Premium Cover o Super Premium Cover para reducir/eliminar esta cantidad.
+                </p>
+              </div>
+            </div>
+
+            <div class="reservation-accordion">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="reservation-accordion-refundable"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy">
+                  <img
+                    class="reservation-accordion__icon"
+                    src="./assets/ico-credit-card.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>Tarifa No Reembolsable</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-refundable" hidden>
+                <p>Esta tarifa no admite reembolso una vez confirmada la reserva.</p>
+              </div>
+            </div>
+
+            <div class="reservation-accordion">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="reservation-accordion-fast-track"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy">
+                  <img
+                    class="reservation-accordion__icon"
+                    src="./assets/ico-clock.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>Fast Track</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-fast-track" hidden>
+                <p>Acceso preferente para agilizar la recogida del vehículo.</p>
+              </div>
+            </div>
+
+            <div class="reservation-accordion">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="reservation-accordion-fuel"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy">
+                  <img
+                    class="reservation-accordion__icon"
+                    src="./assets/ico-gas-station.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>Política de combustible: lleno/lleno</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-fuel" hidden>
+                <p>Recoge y devuelve el vehículo con el depósito lleno.</p>
+              </div>
+            </div>
+
+            <div class="reservation-accordion">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="reservation-accordion-km"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy">
+                  <img
+                    class="reservation-accordion__icon"
+                    src="./assets/ico-kms.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>Kilometraje: 300 km/día</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-km" hidden>
+                <p>La reserva incluye hasta 300 km por día de uso.</p>
+              </div>
+            </div>
+
+            <div class="reservation-accordion reservation-accordion--last">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="reservation-accordion-shuttle"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy">
+                  <img
+                    class="reservation-accordion__icon reservation-accordion__icon--lg"
+                    src="./assets/ico-bus.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span>Shuttlebus cortesía</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-shuttle" hidden>
+                <p>Servicio de traslado de cortesía entre el punto de llegada y la oficina.</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="reservation-modal__panel reservation-modal__panel-trigger reservation-modal__panel--compact is-collapsed"
+            type="button"
+            aria-expanded="false"
+            aria-controls="reservation-modal-section-additional"
+            data-reservation-section-trigger="additional"
+          >
+            <span class="reservation-modal__panel-copy">
+              <img
+                class="reservation-modal__panel-icon"
+                src="./assets/ico-info.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Información adicional</span>
+            </span>
+            <img class="reservation-modal__panel-caret" src="./assets/ico-arrow-blue.svg" alt="" aria-hidden="true" />
+          </button>
+
+          <div
+            class="reservation-modal__section reservation-modal__section--additional"
+            id="reservation-modal-section-additional"
+            data-reservation-section-content="additional"
+            hidden
+          >
+            <div class="reservation-accordion reservation-accordion--additional">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="true"
+                aria-controls="reservation-accordion-deposit"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy reservation-accordion__copy--text-only">
+                  <span>Depósito de seguridad</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div
+                class="reservation-accordion__content reservation-accordion__content--spacious"
+                id="reservation-accordion-deposit"
+              >
+                <p>
+                  Durante la entrega de llaves del vehículo, uno de los responsables que figure en el
+                  contrato de alquiler, abonará 100€ mediante tarjeta de crédito en concepto de
+                  depósito reembolsable. No se aceptará efectivo ni tarjetas de débito.
+                </p>
+                <p>Tarjetas válidas:</p>
+                <ol class="reservation-accordion__list">
+                  <li>Visa</li>
+                  <li>MasterCard</li>
+                  <li>American Express</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="reservation-accordion reservation-accordion--additional">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="reservation-accordion-documents"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy reservation-accordion__copy--text-only">
+                  <span>Documentación necesaria</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-documents" hidden>
+                <p>Presenta tu documento de identidad, permiso de conducir y tarjeta válida a nombre del conductor principal.</p>
+              </div>
+            </div>
+
+            <div class="reservation-accordion reservation-accordion--last reservation-accordion--additional">
+              <button
+                class="reservation-accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="reservation-accordion-borders"
+                data-modal-accordion-trigger
+              >
+                <span class="reservation-accordion__copy reservation-accordion__copy--text-only">
+                  <span>Cruce de fronteras</span>
+                </span>
+                <img class="reservation-accordion__caret" src="./assets/ico-arrow-grey.svg" alt="" aria-hidden="true" />
+              </button>
+              <div class="reservation-accordion__content" id="reservation-accordion-borders" hidden>
+                <p>Consulta las condiciones específicas del destino antes de salir del país con el vehículo alquilado.</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="reservation-modal__panel reservation-modal__panel-trigger reservation-modal__panel--compact is-collapsed"
+            type="button"
+            aria-expanded="false"
+            aria-controls="reservation-modal-section-pricing"
+            data-reservation-section-trigger="pricing"
+          >
+            <span class="reservation-modal__panel-copy">
+              <img
+                class="reservation-modal__panel-icon"
+                src="./assets/ico-list.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Desglose de precios</span>
+            </span>
+            <img class="reservation-modal__panel-caret" src="./assets/ico-arrow-blue.svg" alt="" aria-hidden="true" />
+          </button>
+
+          <div
+            class="reservation-modal__section reservation-modal__section--pricing"
+            id="reservation-modal-section-pricing"
+            data-reservation-section-content="pricing"
+            hidden
+          >
+            <div class="reservation-breakdown">
+              <section class="reservation-breakdown__group">
+                <div class="reservation-breakdown__head">
+                  <p class="reservation-breakdown__title">Tarifa</p>
+                  <span class="reservation-breakdown__promo">
+                    <svg class="reservation-breakdown__promo-icon" viewBox="0 0 20 20" aria-hidden="true">
+                      <path
+                        d="M6.66651 6.66699H6.67484M1.6665 4.33366L1.6665 8.06242C1.6665 8.47007 1.6665 8.6739 1.71255 8.86571C1.75338 9.03577 1.82072 9.19835 1.9121 9.34747C2.01517 9.51566 2.1593 9.65979 2.44755 9.94804L8.83808 16.3386C9.82812 17.3286 10.3231 17.8236 10.894 18.0091C11.3961 18.1722 11.9369 18.1722 12.439 18.0091C13.0099 17.8236 13.5049 17.3286 14.4949 16.3386L16.3381 14.4954C17.3281 13.5054 17.8231 13.0104 18.0086 12.4395C18.1718 11.9374 18.1718 11.3966 18.0086 10.8944C17.8231 10.3236 17.3281 9.82861 16.3381 8.83856L9.94755 2.44804C9.6593 2.15979 9.51517 2.01566 9.34698 1.91259C9.19786 1.82121 9.03528 1.75387 8.86522 1.71304C8.67341 1.66699 8.46958 1.66699 8.06193 1.66699L4.33317 1.66699C3.39975 1.66699 2.93304 1.66699 2.57652 1.84865C2.26292 2.00844 2.00795 2.2634 1.84816 2.57701C1.6665 2.93353 1.6665 3.40024 1.6665 4.33366ZM7.08317 6.66699C7.08317 6.89711 6.89662 7.08366 6.66651 7.08366C6.43639 7.08366 6.24984 6.89711 6.24984 6.66699C6.24984 6.43687 6.43639 6.25033 6.66651 6.25033C6.89662 6.25033 7.08317 6.43687 7.08317 6.66699Z"
+                        fill="none"
+                        stroke="#1833B7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span>PROMOCODE</span>
+                  </span>
+                </div>
+                <div class="reservation-breakdown__rows">
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>00 d&iacute;as</span>
+                    </span>
+                    <span class="reservation-breakdown__price reservation-breakdown__price--promo">
+                      <span class="reservation-breakdown__old">000&euro;</span>
+                      <span class="reservation-breakdown__discount">-15%</span>
+                      <span>000,00&euro;</span>
+                    </span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="reservation-breakdown__group">
+                <div class="reservation-breakdown__head">
+                  <p class="reservation-breakdown__title">Extras</p>
+                  <span class="reservation-breakdown__promo">
+                    <svg class="reservation-breakdown__promo-icon" viewBox="0 0 20 20" aria-hidden="true">
+                      <path
+                        d="M6.66651 6.66699H6.67484M1.6665 4.33366L1.6665 8.06242C1.6665 8.47007 1.6665 8.6739 1.71255 8.86571C1.75338 9.03577 1.82072 9.19835 1.9121 9.34747C2.01517 9.51566 2.1593 9.65979 2.44755 9.94804L8.83808 16.3386C9.82812 17.3286 10.3231 17.8236 10.894 18.0091C11.3961 18.1722 11.9369 18.1722 12.439 18.0091C13.0099 17.8236 13.5049 17.3286 14.4949 16.3386L16.3381 14.4954C17.3281 13.5054 17.8231 13.0104 18.0086 12.4395C18.1718 11.9374 18.1718 11.3966 18.0086 10.8944C17.8231 10.3236 17.3281 9.82861 16.3381 8.83856L9.94755 2.44804C9.6593 2.15979 9.51517 2.01566 9.34698 1.91259C9.19786 1.82121 9.03528 1.75387 8.86522 1.71304C8.67341 1.66699 8.46958 1.66699 8.06193 1.66699L4.33317 1.66699C3.39975 1.66699 2.93304 1.66699 2.57652 1.84865C2.26292 2.00844 2.00795 2.2634 1.84816 2.57701C1.6665 2.93353 1.6665 3.40024 1.6665 4.33366ZM7.08317 6.66699C7.08317 6.89711 6.89662 7.08366 6.66651 7.08366C6.43639 7.08366 6.24984 6.89711 6.24984 6.66699C6.24984 6.43687 6.43639 6.25033 6.66651 6.25033C6.89662 6.25033 7.08317 6.43687 7.08317 6.66699Z"
+                        fill="none"
+                        stroke="#1833B7"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span>PROMOCODE</span>
+                  </span>
+                </div>
+                <div class="reservation-breakdown__rows">
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Premium Cover</span>
+                    </span>
+                    <span class="reservation-breakdown__price">Incluido</span>
+                  </div>
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Conductor adicional</span>
+                    </span>
+                    <span class="reservation-breakdown__price reservation-breakdown__price--promo">
+                      <span class="reservation-breakdown__old">000&euro;</span>
+                      <span class="reservation-breakdown__discount">-15%</span>
+                      <span>000,00&euro;</span>
+                    </span>
+                  </div>
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Conductor joven</span>
+                    </span>
+                    <span class="reservation-breakdown__price">000,00&euro;</span>
+                  </div>
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Pack mascotas</span>
+                    </span>
+                    <span class="reservation-breakdown__price">000,00&euro;</span>
+                  </div>
+                </div>
+                <div class="reservation-breakdown__subtotal">
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__copy">Subtotal</span>
+                    <span class="reservation-breakdown__price">000,00&euro;</span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="reservation-breakdown__group">
+                <div class="reservation-breakdown__head reservation-breakdown__head--plain">
+                  <p class="reservation-breakdown__title">Club OK</p>
+                </div>
+                <div class="reservation-breakdown__rows">
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Conductor adicional</span>
+                    </span>
+                    <span class="reservation-breakdown__price">Canjeado</span>
+                  </div>
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>GPS</span>
+                    </span>
+                    <span class="reservation-breakdown__price">Canjeado</span>
+                  </div>
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Cadena de nieve</span>
+                    </span>
+                    <span class="reservation-breakdown__price">Canjeado</span>
+                  </div>
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Asistencia en carretera</span>
+                    </span>
+                    <span class="reservation-breakdown__price">Canjeado</span>
+                  </div>
+                </div>
+              </section>
+
+              <section class="reservation-breakdown__group">
+                <div class="reservation-breakdown__head reservation-breakdown__head--plain">
+                  <p class="reservation-breakdown__title">Impuestos y tasas</p>
+                </div>
+                <div class="reservation-breakdown__rows">
+                  <div class="reservation-breakdown__row">
+                    <span class="reservation-breakdown__item">
+                      <span class="reservation-breakdown__dot" aria-hidden="true"></span>
+                      <span>Cargo de aeropuerto</span>
+                    </span>
+                    <span class="reservation-breakdown__price">000,00&euro;</span>
+                  </div>
+                </div>
+              </section>
+
+              <div class="reservation-breakdown__total">
+                <div class="reservation-breakdown__total-row">
+                  <span class="reservation-breakdown__total-label">TOTAL</span>
+                  <span class="reservation-breakdown__total-value">000,00&euro;</span>
+                </div>
+                <p class="reservation-breakdown__tax-note">Impuestos incluidos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reservation-modal__actions">
+            <button class="reservation-modal__accept" type="button" data-reservation-modal-close>
+              Aceptar
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
